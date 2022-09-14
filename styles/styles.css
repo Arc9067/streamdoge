@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -224,6 +225,7 @@ a, button {
 
 .team {
   height: auto;
+  margin-top: 50px;
 }
 .team h2 {
   color: #fff;
@@ -263,16 +265,99 @@ a, button {
 }
 .team .our-team .title {
   font-weight: 600;
-  color: #f5af19;
+  color: #fff;
   text-transform: uppercase;
   display: block;
   font-size: 20px;
   margin: 0 0 7px 0;
 }
 .team .our-team .post {
-  color: #f12711;
+  color: #f5af19;
   text-transform: capitalize;
   display: block;
   font-size: 15px;
   margin-bottom: 15px;
+}
+
+.price {
+  height: auto;
+  width: 100%;
+  background-color: #f5af19;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.price .row h2 {
+  padding: 5px;
+  background: #f12711;
+  background: linear-gradient(to right, #f5af19, #f12711);
+  border-radius: 50%;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+}
+.price .row .inprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price .row .inprice div {
+  padding: 10px;
+  background-color: #22201d;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: #fff;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #323a69;
+  text-decoration: underline;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999999999999990000000000000000;
+}
+.loader .loader-con {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #323a69;
+  border-radius: 50px;
+  border-top-color: transparent;
+  border-top: 0px;
+  -webkit-animation: loader 1s linear infinite;
+          animation: loader 1s linear infinite;
+}
+@-webkit-keyframes loader {
+  25% {
+    border-color: #ff3e37;
+  }
+  50% {
+    color: #000;
+  }
+  75% {
+    color: #323a69;
+  }
+  to {
+    transform: rotate(350deg);
+  }
+}
+@keyframes loader {
+  25% {
+    border-color: #ff3e37;
+  }
+  50% {
+    color: #000;
+  }
+  75% {
+    color: #323a69;
+  }
+  to {
+    transform: rotate(350deg);
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -17,6 +17,8 @@
 </head>
 
 <body class="container-fluid">
+
+
     <div class="px-3 py-2">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
@@ -54,6 +56,13 @@
             </div>
         </div>
     </div>
+
+            <!-- <div id="loading" class="loader">
+                <div class="loader-con">
+            
+                </div>
+            </div> -->
+
 
     <!-- home-page -->
     <section class="container home">
@@ -142,100 +151,137 @@
         </div>
     </section>
 
-    <section class="team container">
-        <div class="row">
-            <h2>StreamDoge's Team</h2>
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/logo.PNG">
-                    </div>
-                    <h3 class="title">L1</h3>
-                    <span class="post">CEO $SDOGE</span>
-            
-                    <!--social icon-->
-                    <a target="_blank" href="https://t.me/lnvested"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
-            
-            <!--2nd member-->
-            
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/logo.PNG">
-                    </div>
-                    <h3 class="title">Monkey</h3>
-                    <span class="post">CCEO $SDOGE</span>
-            
-                    <!--social Icon-->
-                    <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
-            
-            <!--3rd member-->
-            
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/logo.PNG">
-                    </div>
-                    <h3 class="title">Taylor</h3>
-                    <span class="post">$SDOGE MARKETER</span>
-            
-                    <!--social icon-->
-                    <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
-            
-            <!--4th member-->
-            
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/lski.jpg">
-                    </div>
-                    <h3 class="title">Lski</h3>
-                    <span class="post">Web Designer</span>
-            
-                    <!--social icon-->
-                    <a target="_blank" href="https://t.me/LSKI4"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/blade.jpg">
-                    </div>
-                    <h3 class="title">Blade</h3>
-                    <span class="post">Web Designer</span>
-            
-                    <!--social icon-->
-                    <a target="_blank" href="https://t.me/original_blade"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mt-5">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="./img/eno.jpg">
-                    </div>
-                    <h3 class="title">Eno</h3>
-                    <span class="post">Artist</span>
-            
-                    <!--social icon-->
-                    <a target="_blank" href="https://t.me/enoCrypt"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
 
+        <section class="container-fluid price">
+            <div class="container">
+                        <div class="row">
+                            <h2 onclick="a()">StreamDoge Price</h2>
+                            <div class="inprice row">
+                                <div class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4>Name: <span id="tkname">Loading</span></h4>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4>Symbol: <span id="tksymbol">Loading</span></h4>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4>Price: <span id="tkprice">Loading</span></h4>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4>Price / BNB: <span id="tkbnb">Loading</span></h4>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4>Marketcap :<span id="market">Untracked</span></h4>
+                                </div>
+                                <div style="background-color: #f12711; cursor: pointer;" class="col-lg-3 col-md-2 col-sm-8">
+                                    <h4 onclick="a()"><i class="fa-solid fa-arrows-rotate"></i> Refresh Data</h4>
+                                </div>
 
-        </div>
+                            </div>
+                        </div>
+
+            </div>
     </section>
 
+        <section class="team container">
+            <div class="row">
+                <h2>StreamDoge's Team</h2>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/logo.PNG">
+                        </div>
+                        <h3 class="title">L1</h3>
+                        <span class="post">CEO $SDOGE</span>
+        
+                        <!--social icon-->
+                        <a target="_blank" href="https://t.me/lnvested"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+        
+                <!--2nd member-->
+        
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/logo.PNG">
+                        </div>
+                        <h3 class="title">Monkey</h3>
+                        <span class="post">CCEO $SDOGE</span>
+        
+                        <!--social Icon-->
+                        <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+        
+                <!--3rd member-->
+        
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/logo.PNG">
+                        </div>
+                        <h3 class="title">Taylor</h3>
+                        <span class="post">$SDOGE MARKETER</span>
+        
+                        <!--social icon-->
+                        <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+        
+                <!--4th member-->
+        
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/lski.jpg">
+                        </div>
+                        <h3 class="title">Lski</h3>
+                        <span class="post">Web Designer</span>
+        
+                        <!--social icon-->
+                        <a target="_blank" href="https://t.me/LSKI4"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/blade.jpg">
+                        </div>
+                        <h3 class="title">Blade</h3>
+                        <span class="post">Web Designer</span>
+        
+                        <!--social icon-->
+                        <a target="_blank" href="https://t.me/original_blade"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/eno.jpg">
+                        </div>
+                        <h3 class="title">Eno</h3>
+                        <span class="post">Artist</span>
+        
+                        <!--social icon-->
+                        <a target="_blank" href="https://t.me/enoCrypt"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+        
+        
+            </div>
+        </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
     <script src="./scripts/api.js"></script>
+                <script>
+                    $(window).on("load", function () {
+                        $(".loader").fadeOut(6000)
+                    })
+                </script>
+
 </body>
 </html>

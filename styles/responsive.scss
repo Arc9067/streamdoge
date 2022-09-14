@@ -11,13 +11,35 @@
 //     }
 // }
 
-// @media only screen and (min-width:321px) and (max-width:768px){
-//     .home {
-//             background-c olor: green;
-//             flex-direction: column;
+@media only screen and (min-width:321px) and (max-width:768px){
+    .home {
+            // background-color: green;
+            flex-direction: column;
+            overflow: hidden;
     
-//             .inhome {
-//                 width: 100%;
-//             }
-//         }
-// }
+            .inhome {
+                width: 100%;
+
+                h1{
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                }
+                .homesocial{
+                    width: 60%;
+                }
+                img{
+                    margin-top:20px ;
+                }
+
+            }
+        }
+        .price {
+            .row {
+                h2 {
+                    width: 90%;
+                }
+            }
+        }
+}

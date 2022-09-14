@@ -1,1 +1,24 @@
-/*# sourceMappingURL=responsive.css.map */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .home .inhome {
+    width: 100%;
+  }
+  .home .inhome h1 {
+    width: 100%;
+  }
+  .home .inhome p {
+    width: 100%;
+  }
+  .home .inhome .homesocial {
+    width: 60%;
+  }
+  .home .inhome img {
+    margin-top: 20px;
+  }
+  .price .row h2 {
+    width: 90%;
+  }
+}/*# sourceMappingURL=responsive.css.map */
