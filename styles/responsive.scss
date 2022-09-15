@@ -21,10 +21,11 @@
                 width: 100%;
 
                 h1{
-                    width: 100%;
+                    width: 120%;
+                    font-size: 2em;
                 }
                 p{
-                    width: 100%;
+                    width: 120%;
                 }
                 .homesocial{
                     width: 60%;
@@ -42,4 +43,30 @@
                 }
             }
         }
+
+                        .infeatures:nth-child(2) {
+                            color: white;
+            
+                            .row {
+                                justify-content: center;
+                                align-items: center;
+                                div {
+                                    background-color: #22201d;
+                                    margin-right: 30px;
+                                    margin-top: 30px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    border-radius: 20px;
+            
+                                    p {
+                                        color: #ffffff !important;
+                                        font-size: 1em;
+                                        font-family: $Poppins;
+                                        color: $Montserrat;
+                                    }
+                                }
+                            }
+                        }
 }

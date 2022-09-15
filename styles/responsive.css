@@ -7,10 +7,11 @@
     width: 100%;
   }
   .home .inhome h1 {
-    width: 100%;
+    width: 120%;
+    font-size: 2em;
   }
   .home .inhome p {
-    width: 100%;
+    width: 120%;
   }
   .home .inhome .homesocial {
     width: 60%;

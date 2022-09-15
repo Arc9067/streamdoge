@@ -117,6 +117,9 @@ a:hover{
     display: flex;
     padding: 50px;
     color: white;
+    background: url(../img/bg.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
 
     .row{
         // background-color: green;
@@ -177,8 +180,8 @@ a:hover{
             h2{
                 font-size: 2em;
                 // text-align: center;
-                background: -webkit-linear-gradient(#eee, #333);
-                -webkit-background-clip: text;
+            background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+                background: linear-gradient(to right, #f5af19, #f12711);                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 // background: #f12711;
             }
@@ -204,6 +207,7 @@ a:hover{
         color: white;
 
         .row{
+            justify-content: center;
             div{
                 background-color: #22201d;
                 margin-right: 30px;
@@ -383,6 +387,50 @@ background: #f12711;
         }
 
     }
+}
+
+.part {
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(7, 6, 6); */
+    background-color: #22201d;
+    z-index: 10000;
+    padding-bottom: 50px;
+}
+
+.h1part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-size: 2em;
+    padding-top: 20px;
+    color: #f5af19;
+}
+
+.slide {
+    /* height: 70%; */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide img {
+    height: 60px;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+.caroubtn {
+    margin-top: 30px;
+}
+
+.caroubtn button {
+    background-color: #513252;
+    color: white;
+    font-family: "McLaren";
+    margin-top: 20px;
 }
 
 .loader {
