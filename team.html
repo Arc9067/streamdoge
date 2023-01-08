@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>Stream Doge Official</title>
     <meta name="description" content="A social lifestyle web3 dapp for small and big content creators.">
     <link rel="icon" href="./img/logo.PNG">
-    <link rel="stylesheet" href="./scripts/jquery.js">
+    <script src="./scripts/jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -15,139 +16,211 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/22d9f2c7a2.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <div class="px-3 py-2">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
-                    <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none alogo">
-                        <img src="./img/logo.PNG" height="50px" alt="logo">
-                    </a>
-        
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="#" class="nav-link text-secondary">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Features
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Tokenomics
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                roadmap
-                            </a>
-                        </li>
-                    </ul>
+</head>
+
+<body>
+    <div id="loading" class="loader">
+        <div class="loader-con">
+            <div class="spinner-grow"></div>
+        </div>
+    </div>
+
+
+    <div class="px-3 py-2 fixed-top" style="width: 100%;z-index: 1000;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
+                <div class="container-fluid">
+                    <a class="navbar-brand alogo" href="#"><img src="./img/logo.PNG" height="50px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="navbar-collapse collapse show" id="navbarsExample07">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#utility">Utility</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#roadmap">Roadmap</a>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Links</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://t.me/StreamerDogeBot">Telegram</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="http://twitter.com/streamer_doge">Twitter</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="http://linktr.ee/StreamerDoge">LinkTree</a></li>
+                                    <li><a class="dropdown-item" href="./StreamerDogeWhitePaper.pdf">WhitePaper</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">Buy</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">Chart</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">WhitePaper</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">Audit</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="team container">
+        <div class="row">
+            <h2 data-aos="fade-up-right" data-aos-duration="3000">StreamDoge's Team</h2>
+            <div class="col-md-3 col-sm-6 mt-5">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/logo2.PNG">
+                    </div>
+                    <h3 class="title">L1</h3>
+                    <span class="post">CEO $SDOGE</span>
+
+                    <!--social icon-->
+                    <a target="_blank" href="https://t.me/lnvested"><i class="fa-brands fa-telegram"></i></a>
                 </div>
             </div>
-        </div>
 
-            <section class="team container">
-                <div class="row">
-                    <h2>StreamDoge's Team</h2>
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/logo2.png">
-                            </div>
-                            <h3 class="title">L1</h3>
-                            <span class="post">CEO $SDOGE</span>
-            
-                            <!--social icon-->
-                            <a target="_blank" href="https://t.me/lnvested"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
+            <!--2nd member-->
+
+            <div class="col-md-3 col-sm-6 mt-5">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/logo2.PNG">
                     </div>
-            
-                    <!--2nd member-->
-            
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/logo2.png">
-                            </div>
-                            <h3 class="title">Monkey</h3>
-                            <span class="post">CCEO $SDOGE</span>
-            
-                            <!--social Icon-->
-                            <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                    </div>
-            
-                    <!--3rd member-->
-            
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/logo2.png">
-                            </div>
-                            <h3 class="title">Taylor</h3>
-                            <span class="post">$SDOGE MARKETER</span>
-            
-                            <!--social icon-->
-                            <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                    </div>
-            
-                    <!--4th member-->
-            
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/lski.jpg">
-                            </div>
-                            <h3 class="title">Lski</h3>
-                            <span class="post">Web Designer</span>
-            
-                            <!--social icon-->
-                            <a target="_blank" href="https://t.me/LSKI4"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/blade.jfif">
-                            </div>
-                            <h3 class="title">Blade</h3>
-                            <span class="post">Web Designer</span>
-            
-                            <!--social icon-->
-                            <a target="_blank" href="https://t.me/original_blade"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mt-5">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/bit.jfif">
-                            </div>
-                            <h3 class="title">Eno</h3>
-                            <span class="post">Artist</span>
-            
-                            <!--social icon-->
-                            <a target="_blank" href="https://t.me/enoCrypt"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                    </div>
-            
-            
+                    <h3 class="title">Monkey</h3>
+                    <span class="post">CCEO $SDOGE</span>
+
+                    <!--social Icon-->
+                    <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
                 </div>
-            </section>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-                    crossorigin="anonymous"></script>
+            </div>
+
+            <!--3rd member-->
+
+            <div class="col-md-3 col-sm-6 mt-5">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/logo2.PNG">
+                    </div>
+                    <h3 class="title">Taylor</h3>
+                    <span class="post">$SDOGE MARKETER</span>
+
+                    <!--social icon-->
+                    <a target="_blank" href="https://t.me/dutchmonkey07"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <!--4th member-->
+
+            <div class="team col-md-3 col-sm-6 m-t-30">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/lski.jpg">
+                    </div>
+                    <h3 class="title">Lski</h3>
+                    <span class="post">Social Media</span>
+
+                    <!--social icon-->
+                    <a target="_blank" href="https://t.me/LSKI4"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-5">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/blade.jfif">
+                    </div>
+                    <h3 class="title">Blade</h3>
+                    <span class="post">Web Designer</span>
+
+                    <!--social icon-->
+                    <a target="_blank" href="https://t.me/original_blade"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-5">
+                <div class="our-team" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="pic">
+                        <img src="./img/bit.jfif">
+                    </div>
+                    <h3 class="title">Eno</h3>
+                    <span class="post">Artist</span>
+
+                    <!--social icon-->
+                    <a target="_blank" href="https://t.me/enoCrypt"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="footer-dark container-fluid">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="index.html#utility">Utility</a></li>
+                            <li><a href="#">Team</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Social</h3>
+                        <ul>
+                        <ul>
+                            <li><a target="_blank" href="https://t.me/StreamerDogeBot">Telegram</a></li>
+                            <li><a target="_blank" href="http://twitter.com/streamer_doge">Twitter</a></li>
+                            <li><a target="_blank" href="https://linktr.ee/StreamerDoge">LinkTree</a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Disclainer</h3>
+                        <p>The information provided on this website and its affiliated groups/communities does not
+                            constitute investment advice, financial advice, trading advice, or any
+                            other sort of advice and you should not treat any of the website's content as such.</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://t.me/StreamerDogeBot"><i class="fa-brands fa-telegram"></i></a>
+                        <a target="_blank" href="http://twitter.com/streamer_doge"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="disabled" href=""  target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                </div>
+                <p class="copyright">Steamer Doge © 2022</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader").fadeOut(6000)
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>

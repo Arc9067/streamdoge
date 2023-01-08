@@ -23,6 +23,31 @@ p {
   font-size: 1.5em;
 }
 
+.loader {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999999999999990000000000000000;
+}
+.loader .loader-con {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border-top-color: transparent;
+  border-top: 0px;
+}
+.loader .loader-con div {
+  background: #f12711;
+  background: linear-gradient(to right, #f5af19, #f12711);
+  border-radius: 50%;
+}
+
 button {
   background: #f12711;
   /* fallback for old browsers */
@@ -76,9 +101,8 @@ a, button {
   background: transparent;
 }
 .py-2 a:hover {
-  background: #f12711;
-  background: linear-gradient(to right, #f5af19, #f12711);
-  color: white;
+  color: #f12711;
+  font-size: 1.5;
 }
 
 .home {
@@ -91,6 +115,8 @@ a, button {
   background: url(../img/bg.JPG);
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 50px;
+  overflow: hidden;
 }
 .home .row {
   width: 100%;
@@ -133,6 +159,7 @@ a, button {
   width: 100%;
   background-color: #191919;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  overflow: hidden;
 }
 .features .row .infeatures {
   padding-top: 20px;
@@ -193,6 +220,7 @@ a, button {
   height: auto;
   width: 100%;
   margin-top: 20px;
+  overflow: hidden;
 }
 .utility .row {
   display: flex;
@@ -232,6 +260,7 @@ a, button {
 .team {
   height: auto;
   margin-top: 50px;
+  overflow: hidden;
 }
 .team h2 {
   color: #fff;
@@ -285,35 +314,45 @@ a, button {
   margin-bottom: 15px;
 }
 
-.price {
-  height: auto;
+.roadmap {
+  height: 60vh;
   width: 100%;
-  background-color: #f5af19;
-  margin-top: 30px;
-  padding-bottom: 30px;
-}
-.price .row h2 {
-  padding: 5px;
-  background: #f12711;
-  background: linear-gradient(to right, #f5af19, #f12711);
-  border-radius: 50%;
-  width: 50%;
-  text-align: center;
-  border-radius: 10px;
-}
-.price .row .inprice {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.price .row .inprice div {
-  padding: 10px;
-  background-color: #22201d;
-  border-radius: 10px;
-  margin-top: 50px;
-  color: #fff;
-  margin-left: 10px;
+  background: url(../img/bg2.JPG);
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
   overflow: hidden;
+}
+.roadmap .row .offcanvas.show:not(.hiding),
+.roadmap .row .offcanvas.showing {
+  background-color: #fff;
+}
+.roadmap .row .offcanvas-header .btn-close {
+  border: 2px solid #f5af19;
+}
+.roadmap .row [type=button]:not(:disabled),
+.roadmap .row [type=reset]:not(:disabled),
+.roadmap .row [type=submit]:not(:disabled),
+.roadmap .row button:not(:disabled) {
+  width: 20%;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  font-family: "Poppins", san-serif;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 30px;
+}
+.roadmap .row .p-t-20, .roadmap .row .offcanvas-title {
+  background: linear-gradient(to right, #f5af19, #f12711);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.roadmap .row li {
+  color: gray;
+  padding-bottom: 10px;
+  list-style: disc;
+  font-family: "Montserrat", sans-serif;
 }
 
 .part {
@@ -321,8 +360,9 @@ a, button {
   width: 100%;
   /* background-color: rgb(7, 6, 6); */
   background-color: #22201d;
-  z-index: 10000;
+  z-index: 100;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .h1part {
@@ -359,54 +399,125 @@ a, button {
   margin-top: 20px;
 }
 
-.loader {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #323a69;
-  text-decoration: underline;
-  overflow: hidden;
-  position: fixed;
-  z-index: 99999999999999990000000000000000;
+.footer-dark {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #22201d;
+  margin-top: 30px;
 }
-.loader .loader-con {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #323a69;
-  border-radius: 50px;
-  border-top-color: transparent;
-  border-top: 0px;
-  -webkit-animation: loader 1s linear infinite;
-          animation: loader 1s linear infinite;
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
 }
-@-webkit-keyframes loader {
-  25% {
-    border-color: #ff3e37;
-  }
-  50% {
-    color: #000;
-  }
-  75% {
-    color: #323a69;
-  }
-  to {
-    transform: rotate(350deg);
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.team h2 {
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
-@keyframes loader {
-  25% {
-    border-color: #ff3e37;
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
   }
-  50% {
-    color: #000;
+  .roadmap .offcanvas-header .btn-close {
+    border: 2px solid #f5af19;
   }
-  75% {
-    color: #323a69;
+  .roadmap [type=button]:not(:disabled),
+.roadmap [type=reset]:not(:disabled),
+.roadmap [type=submit]:not(:disabled),
+.roadmap button:not(:disabled) {
+    width: 90% !important;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    font-family: "Poppins", san-serif;
+    font-size: 1.5em;
+    color: black;
   }
-  to {
-    transform: rotate(350deg);
+  .h1part h2 {
+    font-size: 2em;
   }
+  .utility .row h2 {
+    font-size: 2.5em;
+  }
+  .roadmap .row .p-t-20,
+.roadmap .row .offcanvas-title {
+    font-size: 2.5em;
+  }
+  .roadmap {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=styles.css.map */
