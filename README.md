@@ -33,9 +33,9 @@
 
 ![alt text](https://github.com/Arc9067/streamdoge/blob/main/Screenshots/4.png?raw=true)
 
-![alt text](https://github.com/Arc9067/streamdoge/blob/main/Screenshots/5.png?raw=true)
+![alt text](https://github.com/Arc9067/streamdoge/blob/main/Screenshots/5.PNG?raw=true)
 
-![alt text](https://github.com/Arc9067/streamdoge/blob/main/Screenshots/6.png?raw=true)
+![alt text](https://github.com/Arc9067/streamdoge/blob/main/Screenshots/6.PNG?raw=true)
 
 
 
